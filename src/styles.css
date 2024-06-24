@@ -1,0 +1,79 @@
+:root {
+    --green: #e0ffcd; 
+    --yellow: #fdffcd;
+    --orange: #ffebbb;
+    --red: #ffcab0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+}
+
+#project-panel {
+    grid-column: 1;
+    background-color: var(--red);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#dashboard {
+    grid-column: 2;
+    background-color: var(--yellow);
+    padding: 20px;
+    padding-right: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+#project-title-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#new-project, .selectable-project, #new-to-do {
+    cursor: pointer;
+}
+
+#new-project, #new-to-do {
+    color: blue;
+}
+
+.panel-header, #new-to-do {
+    font-weight: bold;
+}
+
+.selectable-project {
+    padding: 20px 5px;
+    border-bottom: 2px solid;
+}
+
+.selectable-project:hover {
+    background: var(--orange)
+}
+
+
+#project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
