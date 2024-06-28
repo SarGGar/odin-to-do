@@ -7,16 +7,22 @@
 </head>
 <body>
     <div class="content">
-        <div id="project-panel">
-            <div id="new-project" class="panel-header">Create New Project..</div>
-            <input type="text" id="project-name-input" placeholder="Enter project name" style="display: none;">
+        <div id="panel">
+            <div class="new-project-div">
+                <div id="new-project" class="panel-header">Create New Project..</div>
+                <input type="text" id="project-name-input" placeholder="Enter project name" style="display: none;">
+            </div>
             <div class="panel-header">Projects</div>
             <div id="project-list"></div>
         </div>
         <div id="dashboard">
-            <div class="new-to-do-div"></div>
-            <div class="main-content"></div>
-            <!-- <div class="new-to-do-div"></div> -->
+            <div id="dashboard-header"></div>
+            <div class="new-task-div">
+                <div id="new-task" class="dashboard-header">Create New Task..</div>
+                <input type="text" id="task-input" placeholder="Enter task" style="display: none;">
+            </div>
+
+            <div id="task-list"></div>
         </div>
 
 
